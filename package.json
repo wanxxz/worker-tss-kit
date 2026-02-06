@@ -1,0 +1,51 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@libsql/client": "0.17.0",
+    "@tanstack/query-db-collection": "1.0.22",
+    "@tanstack/react-db": "0.1.69",
+    "@tanstack/react-form": "1.28.0",
+    "@tanstack/react-query": "5.90.20",
+    "@tanstack/react-router": "1.158.1",
+    "@tanstack/react-start": "1.158.3",
+    "@tanstack/react-table": "8.21.3",
+    "@tanstack/virtual-file-routes": "1.154.7",
+    "@types/lodash": "4.17.23",
+    "@types/node": "25.2.1",
+    "@types/react": "19.2.13",
+    "@types/react-dom": "19.2.3",
+    "@uidotdev/usehooks": "2.4.1",
+    "@vanilla-extract/dynamic": "2.1.5",
+    "@vanilla-extract/recipes": "0.5.7",
+    "clsx": "2.1.1",
+    "drizzle-orm": "0.45.1",
+    "lodash": "4.17.23",
+    "lucide-react": "0.563.0",
+    "nanoid": "5.1.6",
+    "react": "19.2.4",
+    "react-aria": "3.46.0",
+    "react-aria-components": "1.15.1",
+    "react-dom": "19.2.4",
+    "use-intl": "4.8.2",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@vanilla-extract/css": "1.17.1",
+    "@vanilla-extract/css-utils": "0.1.4",
+    "@vanilla-extract/vite-plugin": "5.0.1",
+    "@vitejs/plugin-react": "5.1.2",
+    "drizzle-kit": "^0.31.8",
+    "husky": "9.1.7",
+    "lint-staged": "16.2.7",
+    "prettier": "3.7.4",
+    "typescript": "5.9.3",
+    "vite": "7.3.0"
+  },
+  "overrides": {
+    "vite": "7.3.0"
+  }
+}

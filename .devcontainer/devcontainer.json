@@ -1,0 +1,7 @@
+{
+  "image": "node",
+  "name": "vec",
+  "runArgs": ["--name", "vec"],
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+  "workspaceFolder": "/workspace"
+}
