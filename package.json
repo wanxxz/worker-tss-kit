@@ -5,6 +5,10 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@glideapps/glide-data-grid": "6.0.3",
+    "@jsonforms/core": "3.7.0",
+    "@jsonforms/react": "3.7.0",
+    "@observablehq/plot": "0.6.17",
     "@react-spectrum/s2": "1.1.0",
     "@tanstack/query-db-collection": "1.0.22",
     "@tanstack/react-db": "0.1.69",
@@ -15,6 +19,7 @@
     "@tanstack/react-table": "8.21.3",
     "@tanstack/virtual-file-routes": "1.154.7",
     "@uidotdev/usehooks": "2.4.1",
+    "@xyflow/react": "12.10.0",
     "bknd": "0.20.0",
     "lodash": "4.17.23",
     "nanoid": "5.1.6",
@@ -37,5 +42,9 @@
     "typescript": "5.9.3",
     "unplugin-parcel-macros": "0.1.1",
     "vite": "7.3.0"
+  },
+  "overrides": {
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
   }
 }
