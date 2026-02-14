@@ -5,10 +5,9 @@ import { routeTree } from './routeTree.gen'
 export function getRouter() {
   const router = createRouter({
     routeTree,
-    defaultPreload: 'intent',
+    scrollRestoration: true,
     defaultErrorComponent: ErrorComponent,
-    defaultNotFoundComponent: () => <NotFoundComponent />,
-    scrollRestoration: true
+    defaultNotFoundComponent: () => <NotFoundComponent />
   })
 
   return router

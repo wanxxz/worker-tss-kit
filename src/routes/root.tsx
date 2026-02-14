@@ -1,5 +1,5 @@
 import { createRootRoute, HeadContent, Outlet, Scripts } from '@tanstack/react-router'
-import { WithIntl, WithQuery, WithRAC } from '../components'
+import { WithConvex, WithIntl, WithQuery, WithRAC, WithRS } from '../components'
 
 function Root() {
   return (
@@ -9,11 +9,15 @@ function Root() {
       </head>
       <body>
         <WithQuery>
-          <WithIntl>
-            <WithRAC>
-              <Outlet />
-            </WithRAC>
-          </WithIntl>
+          <WithConvex>
+            <WithIntl>
+              <WithRS>
+                <WithRAC>
+                  <Outlet />
+                </WithRAC>
+              </WithRS>
+            </WithIntl>
+          </WithConvex>
         </WithQuery>
         <Scripts />
       </body>

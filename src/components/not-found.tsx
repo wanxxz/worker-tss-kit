@@ -1,7 +1,7 @@
 import { useRouter } from '@tanstack/react-router'
 import { type FunctionComponent, type PropsWithChildren } from 'react'
 import { Button, Heading } from 'react-aria-components'
-import { ButtonLink } from './ui/link'
+import { ButtonLink } from './link'
 
 export const NotFoundComponent: FunctionComponent<PropsWithChildren> = props => {
   const router = useRouter()

@@ -1,9 +1,9 @@
 import { createFileRoute } from '@tanstack/react-router'
 
-function IndexPage() {
+function Index() {
   return <div></div>
 }
 
 export const Route = createFileRoute('/_layout/')({
-  component: IndexPage
+  component: Index
 })

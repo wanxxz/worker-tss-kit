@@ -19,7 +19,7 @@ export async function resolveLocale(): Promise<Locale> {
 
 export async function resolveMessages(locale: Locale): Promise<Messages> {
   const res = await fetch(`/messages/${locale}.json`)
-  const messages = res.json<Messages>()
+  const messages = res.json()
   return messages
 }
 
