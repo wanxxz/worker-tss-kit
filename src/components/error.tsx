@@ -1,5 +1,4 @@
 import { ErrorComponent, rootRouteId, useMatch, useRouter, type ErrorComponentProps } from '@tanstack/react-router'
-import consola from 'consola'
 import { type FunctionComponent } from 'react'
 import { Button } from 'react-aria-components'
 import { ButtonLink } from './link'
@@ -11,7 +10,7 @@ const CustomErrorComponent: FunctionComponent<ErrorComponentProps> = props => {
     select: state => state.id === rootRouteId
   })
 
-  consola.error(props.error)
+  console.error(props.error)
 
   return (
     <div>

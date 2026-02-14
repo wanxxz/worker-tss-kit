@@ -1,23 +1,15 @@
-import { em } from 'bknd'
 import { type BkndConfig } from 'bknd/adapter'
 import { registerLocalMediaAdapter } from 'bknd/adapter/node'
 import { secureRandomString } from 'bknd/utils'
+import { schema } from './src/data'
 
 const local = registerLocalMediaAdapter()
 
-const schema = em({})
-
-type Database = (typeof schema)['DB']
-
-declare module 'bknd' {
-  interface DB extends Database {}
-}
-
 export default {
   app: env => ({
-    adminOptions: false,
-    isProduction: env.NODE_ENV === 'production',
-    secrets: env,
+    options: {
+      mode: 'code'
+    },
     connection: {
       url: env.BKND_CONNECTION_URL ?? ':memory:'
     },
@@ -26,14 +18,14 @@ export default {
       auth: {
         enabled: true,
         jwt: {
-          issuer: env.BKND_CONFIG_AUTH_JWT_SECRET ?? 'sEcReT',
-          secret: env.BKND_CONFIG_AUTH_JWT_ISSUER ?? secureRandomString(64)
+          secret: env.BKND_CONFIG_AUTH_JWT_SECRET ?? 'sEcReT',
+          issuer: env.BKND_CONFIG_AUTH_JWT_ISSUER ?? secureRandomString(64)
         }
       },
       media: {
         enabled: true,
         adapter: local({
-          path: './public/uploads'
+          path: env.BKND_MEDIA_ADAPTER_PATH ?? './public/uploads'
         })
       }
     }
