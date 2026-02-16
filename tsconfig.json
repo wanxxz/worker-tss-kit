@@ -15,6 +15,6 @@
     "target": "esnext",
     "types": ["vite/client"]
   },
-  "files": ["./bknd.config.ts", "./vite.config.ts"],
+  "files": ["./vite.config.ts"],
   "include": ["./src"]
 }

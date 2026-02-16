@@ -5,46 +5,40 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@glideapps/glide-data-grid": "6.0.3",
     "@observablehq/plot": "0.6.17",
-    "@react-spectrum/s2": "1.1.0",
-    "@tanstack/query-db-collection": "1.0.22",
-    "@tanstack/react-db": "0.1.69",
-    "@tanstack/react-form": "1.28.0",
-    "@tanstack/react-query": "5.90.20",
-    "@tanstack/react-router": "1.158.1",
-    "@tanstack/react-start": "1.158.3",
-    "@tanstack/react-table": "8.21.3",
+    "@tanstack/query-db-collection": "1.0.23",
+    "@tanstack/react-db": "0.1.70",
+    "@tanstack/react-form": "1.28.3",
+    "@tanstack/react-query": "5.90.21",
+    "@tanstack/react-router": "1.160.0",
+    "@tanstack/react-start": "1.160.0",
     "@tanstack/virtual-file-routes": "1.154.7",
     "@uidotdev/usehooks": "2.4.1",
-    "@xyflow/react": "12.10.0",
-    "@zodform/core": "0.2.0",
-    "bknd": "0.20.0",
+    "kysely": "0.28.11",
     "lodash": "4.17.23",
     "nanoid": "5.1.6",
     "react": "19.2.4",
     "react-aria": "3.46.0",
     "react-aria-components": "1.15.1",
     "react-dom": "19.2.4",
+    "tabulator-tables": "6.3.1",
     "use-intl": "4.8.2",
     "zod": "4.3.6"
   },
   "devDependencies": {
     "@types/lodash": "4.17.23",
-    "@types/node": "25.2.1",
-    "@types/react": "19.2.13",
+    "@types/node": "25.2.3",
+    "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "@vitejs/plugin-react": "5.1.2",
+    "@vitejs/plugin-react": "5.1.4",
     "husky": "9.1.7",
     "lint-staged": "16.2.7",
-    "prettier": "3.7.4",
+    "prettier": "3.8.1",
     "typescript": "5.9.3",
-    "unplugin-parcel-macros": "0.1.1",
-    "vite": "7.3.0"
+    "vite": "7.3.1"
   },
   "overrides": {
     "react": "19.2.4",
-    "react-dom": "19.2.4",
-    "zod": "4.3.6"
+    "react-dom": "19.2.4"
   }
 }
