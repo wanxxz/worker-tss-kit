@@ -14,6 +14,8 @@
     "@tanstack/react-start": "1.160.0",
     "@tanstack/virtual-file-routes": "1.154.7",
     "@uidotdev/usehooks": "2.4.1",
+    "@vanilla-extract/dynamic": "2.1.5",
+    "@vanilla-extract/recipes": "0.5.7",
     "cytoscape": "3.33.1",
     "kysely": "0.28.11",
     "lodash": "4.17.23",
@@ -23,7 +25,7 @@
     "react-aria-components": "1.15.1",
     "react-dom": "19.2.4",
     "tabulator-tables": "6.3.1",
-    "use-intl": "4.8.2",
+    "use-intl": "4.8.3",
     "zod": "4.3.6"
   },
   "devDependencies": {
@@ -31,11 +33,17 @@
     "@types/node": "25.2.3",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
+    "@vanilla-extract/css": "1.18.0",
+    "@vanilla-extract/css-utils": "0.1.6",
+    "@vanilla-extract/vite-plugin": "5.1.4",
     "@vitejs/plugin-react": "5.1.4",
     "husky": "9.1.7",
     "lint-staged": "16.2.7",
     "prettier": "3.8.1",
     "typescript": "5.9.3",
+    "vite": "7.3.1"
+  },
+  "overrides": {
     "vite": "7.3.1"
   }
 }
