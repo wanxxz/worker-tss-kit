@@ -1,7 +1,7 @@
 import { useRouter } from '@tanstack/react-router'
 import { type FunctionComponent, type PropsWithChildren } from 'react'
 import { Button, Heading } from 'react-aria-components'
-import { ButtonLink } from './link'
+import { Link } from './link'
 
 export const NotFoundComponent: FunctionComponent<PropsWithChildren> = props => {
   const router = useRouter()
@@ -12,7 +12,7 @@ export const NotFoundComponent: FunctionComponent<PropsWithChildren> = props => 
       {props.children || (
         <div>
           <Button onPress={() => router.history.back()}>Go Back</Button>
-          <ButtonLink to="/">Start Over</ButtonLink>
+          <Link to="/">Start Over</Link>
         </div>
       )}
     </div>
