@@ -26,6 +26,7 @@
     "react-aria-components": "1.15.1",
     "react-dom": "19.2.4",
     "tabulator-tables": "6.3.1",
+    "unstorage": "1.17.4",
     "use-intl": "4.8.3",
     "zod": "4.3.6"
   },
