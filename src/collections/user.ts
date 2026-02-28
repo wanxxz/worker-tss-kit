@@ -9,8 +9,7 @@ export const usersCollection = createCollection(
   queryCollectionOptions({
     queryKey: ['users'],
     queryFn: async () => {
-      const users = await db.user.limit(10)
-      return users
+      return Promise.resolve([{ id: '' }])
     },
     queryClient,
     getKey: item => item.id

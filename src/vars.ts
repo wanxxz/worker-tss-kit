@@ -4,12 +4,8 @@ config({ override: true })
 
 import { z } from 'zod'
 
-const envSchema = z.object({
-  DATABASE_URL: z.string().nonempty()
-})
+const envSchema = z.object({})
 
 export const env = envSchema.parse(process.env)
 
-export const vars = {
-  databaseUrl: env.DATABASE_URL
-}
+export const vars = {}
