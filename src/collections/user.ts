@@ -1,7 +1,6 @@
 import { QueryClient } from '@tanstack/query-core'
 import { createCollection } from '@tanstack/db'
 import { queryCollectionOptions } from '@tanstack/query-db-collection'
-import { db } from '../db'
 
 const queryClient = new QueryClient()
 
