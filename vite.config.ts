@@ -7,6 +7,9 @@ export default defineConfig({
   plugins: [
     macros.vite(),
     tanstackStart({
+      spa: {
+        enabled: true
+      },
       router: {
         routesDirectory: './routes',
         generatedRouteTree: './routeTree.gen.ts',
